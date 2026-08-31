@@ -1,186 +1,107 @@
-# Brute-Force-2026
-SIH project
-# Academia-Industry Collaboration Portal
+# 🎓 Academia-Industry Collaboration Portal
 
-A centralized platform designed to bridge the gap between **students, academia, and industries** by providing skill assessment, skill mapping, internship opportunities, and placement support.
+<p align="center">
+  <b>Bridging the Gap Between Academia, Students & Industry</b>
+</p>
 
-This project is developed as a solution for **Smart India Hackathon 2026 – Problem Statement 26044**.
+<p align="center">
+  A unified platform for skill mapping, internships, placements, learning opportunities and industry-academia collaboration.
+</p>
 
----
-
-## Problem Statement
-
-**Portal for Academia–Industry Collaboration for Skill Mapping, Internships and Placement**
-
-Students often face difficulty in understanding which skills are required by industries and which career opportunities match their current skill set. At the same time, industries struggle to find students with the right combination of technical and soft skills.
-
-This platform aims to solve this problem by creating a single ecosystem where students, educational institutions, and industries can collaborate effectively.
-
----
-
-## Objective
-
-The main objectives of this project are:
-
-- Assess students' technical and soft skills.
-- Generate personalized skill profiles.
-- Identify skill gaps based on current industry requirements.
-- Map students to suitable job roles and industries.
-- Recommend relevant skill-development programs.
-- Provide internship, apprenticeship, project, and job opportunities.
-- Improve collaboration between academia and industry.
-- Help students become industry-ready.
+<p align="center">
+  <img src="https://img.shields.io/badge/SIH-26044-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Smart%20India%20Hackathon-2026-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Category-Software-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Theme-Smart%20Automation-purple?style=for-the-badge" />
+</p>
 
 ---
 
-## Key Features
+## 📌 About The Project
 
-### 1. Student Skill Assessment
-Students complete a skill-based questionnaire to evaluate their:
+The **Academia-Industry Collaboration Portal** is a centralized digital platform designed to bridge the gap between **students, academicians, institutions and industries**.
 
-- Technical Skills
-- Programming Skills
-- Communication Skills
-- Problem-Solving Skills
-- Soft Skills
-- Domain Knowledge
+The platform helps students understand the skills demanded by industries, identify their skill gaps, discover relevant learning opportunities, internships and jobs, and build a verified digital portfolio.
 
-The system generates a personalized skill profile.
+At the same time, industries can discover suitable candidates based on skills and requirements, while academicians and institutions can access industry opportunities, mentorship programs, faculty internships, FDPs, live projects and collaboration opportunities.
 
-### 2. Skill Gap Analysis
-
-The platform compares the student's current skills with industry-required skills and identifies:
-
-- Existing Skills
-- Missing Skills
-- Skill Strength
-- Areas for Improvement
-
-### 3. Skill Mapping
-
-Based on the student's profile, the system recommends suitable:
-
-- Job Roles
-- Industries
-- Career Paths
-- Courses
-- Skill Development Programs
-
-### 4. Internship & Job Opportunities
-
-Industries can post:
-
-- Internships
-- Jobs
-- Apprenticeships
-- Live Projects
-
-Students can discover and apply for opportunities according to their skills.
-
-### 5. Industry Dashboard
-
-Companies can:
-
-- Create company profiles
-- Define required skills
-- Post internships and jobs
-- Find suitable candidates
-- Review student profiles
-
-### 6. Academia Dashboard
-
-Colleges and institutions can:
-
-- Monitor student skill profiles
-- Identify common skill gaps
-- Track student development
-- Connect with industries
-- Support placement preparation
-
-### 7. Personalized Recommendations
-
-The system provides personalized recommendations based on:
-
-**Student Skills → Skill Gap → Industry Requirements → Career Opportunities**
+> **Our vision:**  
+> Build a connected ecosystem where **skills meet opportunities** and academia works closely with industry.
 
 ---
 
-## User Roles
+# 🏆 Smart India Hackathon
 
-The platform supports three major users:
+### Problem Statement
 
-### Student
-- Register/Login
-- Take skill assessment
-- View skill profile
-- Analyze skill gaps
-- Get career recommendations
-- Search internships and jobs
-- Apply for opportunities
+**SIH Problem Statement ID:** `SIH26044`
 
-### Industry
-- Register/Login
-- Create company profile
-- Define required skills
-- Post jobs and internships
-- View suitable candidates
-- Manage applications
+**Problem Statement:**  
+> **Portal for Academia - Industry collaboration for Skill Mapping, Internships and Placement**
 
-### Academia
-- Manage students
-- Monitor skill development
-- Analyze skill gaps
-- Collaborate with industries
-- Support placement activities
+**Organization:** Ministry of Ayush  
+**Department:** All India Institute of Ayurveda  
+**Category:** Software  
+**Theme:** Smart Automation
 
 ---
 
-## Technology Stack
+## ❗ Problem
 
-### Frontend
-- HTML
-- CSS
-- JavaScript
-- React.js
+There is a significant gap between the skills acquired by students through academic education and the competencies expected by modern industries.
 
-### Backend
-- Java
-- Spring Boot
-- REST APIs
+### Students face challenges such as:
 
-### Database
-- MySQL
+- ❌ Lack of awareness about industry-required skills
+- ❌ Difficulty identifying suitable career paths
+- ❌ Limited access to relevant internships
+- ❌ Difficulty finding industry-relevant learning programs
+- ❌ Scattered placement and internship opportunities
+- ❌ Lack of a verified digital portfolio
+- ❌ Limited interaction with industry professionals
 
-### AI/ML
-- Python
-- Machine Learning
-- Skill Recommendation System
+### Industries face:
 
-### Tools
-- Git
-- GitHub
-- Postman
-- VS Code / IntelliJ IDEA
+- ❌ Difficulty finding candidates with the right skill sets
+- ❌ Lack of efficient skill-based candidate matching
+- ❌ Difficulty reaching suitable students
+- ❌ Limited interaction with academic institutions
+
+### Academicians & Institutions face:
+
+- ❌ Limited visibility into industry opportunities
+- ❌ Difficulty accessing faculty internships and FDPs
+- ❌ Limited industry exposure
+- ❌ Lack of centralized student skill-development analytics
+- ❌ Difficulty tracking internship and placement progress
 
 ---
 
-## System Workflow
+# 💡 Our Solution
+
+We propose a **single integrated platform** connecting:
 
 ```text
-Student Registration
-        ↓
-Skill Assessment
-        ↓
-Skill Profile Generation
-        ↓
-Skill Gap Analysis
-        ↓
-Industry Skill Matching
-        ↓
-Career & Course Recommendations
-        ↓
-Internship / Job Recommendations
-        ↓
-Application
-        ↓
-Industry Selection
+                    ┌─────────────────────┐
+                    │      INDUSTRIES     │
+                    │ Jobs • Internships  │
+                    │ Training • Mentors  │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+┌───────────────┐       ┌─────────────────────┐       ┌────────────────┐
+│   STUDENTS    │◄─────►│  COLLABORATION      │◄─────►│  ACADEMICIANS  │
+│               │       │      PORTAL          │       │                │
+│ Skills        │       │                     │       │ FDPs           │
+│ Internships   │       │ Skill Mapping       │       │ Faculty Intern.│
+│ Jobs          │       │ Matching            │       │ Research       │
+│ Portfolio     │       │ Analytics            │       │ Mentorship     │
+└───────────────┘       └──────────┬──────────┘       └────────────────┘
+                                   │
+                                   ▼
+                         ┌───────────────────┐
+                         │    INSTITUTIONS   │
+                         │ Analytics •       │
+                         │ Monitoring •      │
+                         │ Placement Data    │
+                         └───────────────────┘
