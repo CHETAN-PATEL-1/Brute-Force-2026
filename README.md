@@ -132,3 +132,46 @@ The **Academia–Industry Collaboration Portal** brings all major stakeholders t
                 │ Internship Data   │
                 │ Placement Data    │
                 └───────────────────┘
+
+```
+
+# 🔄 Platform Workflow
+                    USER REGISTRATION
+                           │
+                           ▼
+                    SELECT USER ROLE
+                           │
+            ┌──────────────┼──────────────┐
+            ▼              ▼              ▼
+         STUDENT       ACADEMICIAN     INDUSTRY
+            │              │              │
+            ▼              ▼              ▼
+      Skill Assessment   Opportunities   Post Jobs
+            │              │           & Internships
+            ▼              │              │
+       Skill Profile       │              │
+            │              │              │
+            └──────────────┼──────────────┘
+                           ▼
+                    SKILL MAPPING
+                           │
+                           ▼
+                  SKILL GAP ANALYSIS
+                           │
+                           ▼
+                  SMART RECOMMENDATIONS
+                           │
+              ┌────────────┼────────────┐
+              ▼            ▼            ▼
+          Learning     Internship      Jobs
+          Programs     Opportunities  Opportunities
+              │            │            │
+              └────────────┼────────────┘
+                           ▼
+                    APPLICATION / JOIN
+                           │
+                           ▼
+                    TRACK PROGRESS
+                           │
+                           ▼
+                  DIGITAL PORTFOLIO
