@@ -105,3 +105,43 @@ We propose a **single integrated platform** connecting:
                          │ Monitoring •      │
                          │ Placement Data    │
                          └───────────────────┘
+
+
+<h2>Platform WorkFlow<h2>
+
+                    USER REGISTRATION
+                           │
+                           ▼
+                    SELECT USER ROLE
+                           │
+            ┌──────────────┼──────────────┐
+            ▼              ▼              ▼
+         STUDENT       ACADEMICIAN     INDUSTRY
+            │              │              │
+            ▼              ▼              ▼
+      Skill Assessment   Opportunities   Post Jobs
+            │              │           & Internships
+            ▼              │              │
+       Skill Profile       │              │
+            │              │              │
+            └──────────────┼──────────────┘
+                           ▼
+                    SKILL MAPPING
+                           │
+                           ▼
+                  SMART RECOMMENDATIONS
+                           │
+              ┌────────────┼────────────┐
+              ▼            ▼            ▼
+          Learning     Internship      Jobs
+          Programs     Opportunities  Opportunities
+              │            │            │
+              └────────────┼────────────┘
+                           ▼
+                    APPLICATION / JOIN
+                           │
+                           ▼
+                    TRACK PROGRESS
+                           │
+                           ▼
+                  DIGITAL PORTFOLIO
