@@ -1,43 +1,31 @@
-# 🎓 Academia-Industry Collaboration Portal
+# 🎓 Academia–Industry Collaboration Portal
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Smart%20India%20Hackathon-SIH26044-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/MERN-Stack-61DAFB?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Spring%20Boot-Java-6DB33F?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Under%20Development-yellow?style=for-the-badge" />
+</p>
 
 <p align="center">
   <b>Bridging the Gap Between Academia, Students & Industry</b>
 </p>
 
 <p align="center">
-  A unified platform for skill mapping, internships, placements, learning opportunities and industry-academia collaboration.
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/SIH-26044-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Smart%20India%20Hackathon-2026-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Category-Software-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Theme-Smart%20Automation-purple?style=for-the-badge" />
+  A unified intelligent platform for skill mapping, career development, internships, placements, learning programs and academia–industry collaboration.
 </p>
 
 ---
 
-## 📌 About The Project
-
-The **Academia-Industry Collaboration Portal** is a centralized digital platform designed to bridge the gap between **students, academicians, institutions and industries**.
-
-The platform helps students understand the skills demanded by industries, identify their skill gaps, discover relevant learning opportunities, internships and jobs, and build a verified digital portfolio.
-
-At the same time, industries can discover suitable candidates based on skills and requirements, while academicians and institutions can access industry opportunities, mentorship programs, faculty internships, FDPs, live projects and collaboration opportunities.
-
-> **Our vision:**  
-> Build a connected ecosystem where **skills meet opportunities** and academia works closely with industry.
-
----
-
-# 🏆 Smart India Hackathon
+## 🏆 Smart India Hackathon
 
 ### Problem Statement
 
-**SIH Problem Statement ID:** `SIH26044`
+**Problem Statement ID:** `SIH26044`
 
-**Problem Statement:**  
-> **Portal for Academia - Industry collaboration for Skill Mapping, Internships and Placement**
+**Problem Statement Title:**  
+### Portal for Academia – Industry Collaboration for Skill Mapping, Internships and Placement
 
 **Organization:** Ministry of Ayush  
 **Department:** All India Institute of Ayurveda  
@@ -46,102 +34,101 @@ At the same time, industries can discover suitable candidates based on skills an
 
 ---
 
-## ❗ Problem
+## 📌 Overview
 
-There is a significant gap between the skills acquired by students through academic education and the competencies expected by modern industries.
+The **Academia–Industry Collaboration Portal** is a centralized platform designed to connect **Students, Academicians, Institutions and Industries** on a single ecosystem.
 
-### Students face challenges such as:
+There is a growing gap between the skills students acquire through academic education and the skills demanded by modern industries. Students often struggle to understand which skills are required for their desired career paths, while companies face difficulties in discovering candidates with the right skill sets.
 
-- ❌ Lack of awareness about industry-required skills
-- ❌ Difficulty identifying suitable career paths
-- ❌ Limited access to relevant internships
-- ❌ Difficulty finding industry-relevant learning programs
-- ❌ Scattered placement and internship opportunities
-- ❌ Lack of a verified digital portfolio
-- ❌ Limited interaction with industry professionals
+Similarly, academicians and institutions often have limited access to industry internships, training programs, mentorship, research collaborations and real-world projects.
 
-### Industries face:
+Our platform aims to solve these challenges by creating a unified ecosystem where:
 
-- ❌ Difficulty finding candidates with the right skill sets
-- ❌ Lack of efficient skill-based candidate matching
-- ❌ Difficulty reaching suitable students
-- ❌ Limited interaction with academic institutions
+> **Students discover → Skills are assessed → Skill gaps are identified → Opportunities are matched → Skills are developed → Internships & placements are achieved.**
 
-### Academicians & Institutions face:
+---
 
-- ❌ Limited visibility into industry opportunities
-- ❌ Difficulty accessing faculty internships and FDPs
-- ❌ Limited industry exposure
-- ❌ Lack of centralized student skill-development analytics
-- ❌ Difficulty tracking internship and placement progress
+# 🎯 Problem We Are Solving
+
+The current academia–industry ecosystem is fragmented.
+
+### For Students
+
+- Difficulty identifying industry-relevant skills
+- Lack of personalized career guidance
+- Limited access to relevant internships
+- Scattered job and placement opportunities
+- Difficulty tracking applications
+- Lack of a centralized professional portfolio
+- Limited exposure to industry professionals
+
+### For Industries
+
+- Difficulty finding candidates with relevant skills
+- Inefficient candidate discovery
+- Difficulty reaching suitable students
+- Limited collaboration with academic institutions
+- Lack of an efficient skill-based recruitment ecosystem
+
+### For Academicians
+
+- Limited access to industry opportunities
+- Difficulty discovering faculty internships
+- Limited access to FDPs and industrial training
+- Lack of industry exposure
+- Limited research and consultancy collaboration
+
+### For Institutions
+
+- Difficulty monitoring student skill development
+- Fragmented internship and placement data
+- Limited visibility into industry skill demands
+- Lack of centralized analytics
+- Difficulty measuring placement readiness
 
 ---
 
 # 💡 Our Solution
 
-We propose a **single integrated platform** connecting:
+The **Academia–Industry Collaboration Portal** brings all major stakeholders together through a single role-based platform.
 
 ```text
-                    ┌─────────────────────┐
-                    │      INDUSTRIES     │
-                    │ Jobs • Internships  │
-                    │ Training • Mentors  │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-┌───────────────┐       ┌─────────────────────┐       ┌────────────────┐
-│   STUDENTS    │◄─────►│  COLLABORATION      │◄─────►│  ACADEMICIANS  │
-│               │       │      PORTAL          │       │                │
-│ Skills        │       │                     │       │ FDPs           │
-│ Internships   │       │ Skill Mapping       │       │ Faculty Intern.│
-│ Jobs          │       │ Matching            │       │ Research       │
-│ Portfolio     │       │ Analytics            │       │ Mentorship     │
-└───────────────┘       └──────────┬──────────┘       └────────────────┘
-                                   │
-                                   ▼
-                         ┌───────────────────┐
-                         │    INSTITUTIONS   │
-                         │ Analytics •       │
-                         │ Monitoring •      │
-                         │ Placement Data    │
-                         └───────────────────┘
-
-
-<h2>Platform WorkFlow<h2>
-
-                    USER REGISTRATION
-                           │
-                           ▼
-                    SELECT USER ROLE
-                           │
-            ┌──────────────┼──────────────┐
-            ▼              ▼              ▼
-         STUDENT       ACADEMICIAN     INDUSTRY
-            │              │              │
-            ▼              ▼              ▼
-      Skill Assessment   Opportunities   Post Jobs
-            │              │           & Internships
-            ▼              │              │
-       Skill Profile       │              │
-            │              │              │
-            └──────────────┼──────────────┘
-                           ▼
-                    SKILL MAPPING
-                           │
-                           ▼
-                  SMART RECOMMENDATIONS
-                           │
-              ┌────────────┼────────────┐
-              ▼            ▼            ▼
-          Learning     Internship      Jobs
-          Programs     Opportunities  Opportunities
-              │            │            │
-              └────────────┼────────────┘
-                           ▼
-                    APPLICATION / JOIN
-                           │
-                           ▼
-                    TRACK PROGRESS
-                           │
-                           ▼
-                  DIGITAL PORTFOLIO
+                         ┌─────────────────────┐
+                         │      INDUSTRIES     │
+                         │                     │
+                         │ Jobs                │
+                         │ Internships         │
+                         │ Training Programs   │
+                         │ Mentorship          │
+                         │ Live Projects       │
+                         └──────────┬──────────┘
+                                    │
+                                    │
+              ┌─────────────────────▼─────────────────────┐
+              │                                           │
+              │       ACADEMIA–INDUSTRY PORTAL            │
+              │                                           │
+              │  Skill Mapping • Matching • Analytics     │
+              │  Opportunities • Collaboration            │
+              │                                           │
+              └──────────┬──────────────┬─────────────────┘
+                         │              │
+              ┌──────────▼──────┐  ┌───▼────────────────┐
+              │    STUDENTS     │  │   ACADEMICIANS     │
+              │                 │  │                    │
+              │ Skill Assessment│  │ Faculty Internships│
+              │ Jobs            │  │ FDPs               │
+              │ Internships     │  │ Research           │
+              │ Learning        │  │ Consultancy        │
+              │ Portfolio       │  │ Mentorship         │
+              └─────────────────┘  └────────────────────┘
+                         │
+                         ▼
+                ┌───────────────────┐
+                │   INSTITUTIONS    │
+                │                   │
+                │ Analytics         │
+                │ Skill Monitoring  │
+                │ Internship Data   │
+                │ Placement Data    │
+                └───────────────────┘
