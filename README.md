@@ -561,7 +561,7 @@ Contributions, suggestions, and improvements are welcome.
 
 ```bash
 # Clone repository
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git clone https://github.com/CHETAN-PATEL-1/Brute-Force-2026.git
 
 # Create a feature branch
 git checkout -b feature/your-feature
