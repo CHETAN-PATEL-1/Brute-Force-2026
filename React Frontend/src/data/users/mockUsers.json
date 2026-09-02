@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "data": {
+    "users": [
+      {
+        "id": "usr-student-001",
+        "role": "student",
+        "name": "Demo Student",
+        "email": "student@demo.ac.in"
+      },
+      {
+        "id": "usr-industry-001",
+        "role": "industry",
+        "name": "Demo Industry",
+        "email": "hr@demo-industry.in"
+      },
+      {
+        "id": "usr-mentor-001",
+        "role": "mentor",
+        "name": "Demo Mentor",
+        "email": "mentor@demo.ac.in"
+      },
+      {
+        "id": "usr-admin-001",
+        "role": "admin",
+        "name": "Demo Admin",
+        "email": "admin@demo.ac.in"
+      }
+    ]
+  }
+}

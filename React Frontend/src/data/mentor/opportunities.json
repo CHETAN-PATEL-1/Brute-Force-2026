@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "data": {
+    "opportunities": [],
+    "meta": { "total": 0, "page": 1, "limit": 10 }
+  }
+}
