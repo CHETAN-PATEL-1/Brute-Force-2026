@@ -1,7 +1,32 @@
 {
   "success": true,
   "data": {
-    "postings": [],
-    "meta": { "total": 0, "page": 1, "limit": 10 }
+    "postings": [
+      {
+        "id": "post-001",
+        "title": "Software Engineer Intern",
+        "type": "internship",
+        "applicants": 24,
+        "status": "active",
+        "postedAt": "2026-01-15"
+      },
+      {
+        "id": "post-002",
+        "title": "Ayurveda Data Research Intern",
+        "type": "internship",
+        "applicants": 18,
+        "status": "active",
+        "postedAt": "2026-02-01"
+      },
+      {
+        "id": "post-003",
+        "title": "Graduate Trainee — Full Stack",
+        "type": "job",
+        "applicants": 56,
+        "status": "active",
+        "postedAt": "2026-02-10"
+      }
+    ],
+    "meta": { "total": 3, "page": 1, "limit": 10 }
   }
 }

@@ -5,27 +5,28 @@ export default {
     extend: {
       colors: {
         brand: {
-          50: '#eef2ff',
-          100: '#e0e7ff',
-          200: '#c7d2fe',
-          300: '#a5b4fc',
-          400: '#818cf8',
-          500: '#6366f1',
-          600: '#4f46e5',
-          700: '#4338ca',
-          800: '#3730a3',
-          900: '#312e81',
-          950: '#1e1b4b',
+          50: '#faf5ff',
+          100: '#f3e8ff',
+          200: '#e9d5ff',
+          300: '#d8b4fe',
+          400: '#c084fc',
+          500: '#a855f7',
+          600: '#9333ea',
+          700: '#7e22ce',
+          800: '#6b21a8',
+          900: '#581c87',
+          950: '#3b0764',
         },
         surface: {
           DEFAULT: '#ffffff',
-          muted: '#f8fafc',
+          muted: '#faf8ff',
           elevated: '#ffffff',
+          dark: '#1a1025',
         },
         ink: {
-          DEFAULT: '#0f172a',
-          muted: '#64748b',
-          subtle: '#94a3b8',
+          DEFAULT: '#1e1033',
+          muted: '#6b5b7a',
+          subtle: '#9d8faf',
         },
         success: '#10b981',
         warning: '#f59e0b',
@@ -36,11 +37,26 @@ export default {
         button: '0.75rem',
       },
       boxShadow: {
-        card: '0 1px 3px 0 rgb(0 0 0 / 0.06), 0 4px 16px -2px rgb(0 0 0 / 0.08)',
-        'card-hover': '0 4px 24px -4px rgb(99 102 241 / 0.18)',
+        card: '0 1px 3px 0 rgb(88 28 135 / 0.06), 0 4px 16px -2px rgb(88 28 135 / 0.1)',
+        'card-hover': '0 8px 32px -4px rgb(168 85 247 / 0.25)',
+        glow: '0 0 40px -8px rgb(168 85 247 / 0.45)',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      backgroundImage: {
+        'hero-gradient': 'linear-gradient(135deg, #3b0764 0%, #7e22ce 45%, #a855f7 100%)',
+        'mesh-gradient':
+          'radial-gradient(at 20% 20%, rgb(168 85 247 / 0.35) 0, transparent 50%), radial-gradient(at 80% 0%, rgb(126 34 206 / 0.3) 0, transparent 45%), radial-gradient(at 80% 80%, rgb(59 7 100 / 0.25) 0, transparent 40%)',
+      },
+      animation: {
+        shimmer: 'shimmer 1.8s infinite linear',
+      },
+      keyframes: {
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
       },
     },
   },

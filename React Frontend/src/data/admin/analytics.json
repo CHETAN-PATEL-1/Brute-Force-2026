@@ -1,9 +1,25 @@
 {
   "success": true,
   "data": {
-    "placementRate": 0,
-    "internshipParticipation": 0,
-    "skillDemandTrends": [],
-    "departmentStats": []
+    "placementRate": 78,
+    "internshipParticipation": 64,
+    "avgSkillScore": 71,
+    "totalStudents": 1240,
+    "placedStudents": 968,
+    "skillDemandTrends": [
+      { "skill": "Python", "demand": 92 },
+      { "skill": "Data Analysis", "demand": 88 },
+      { "skill": "Machine Learning", "demand": 85 },
+      { "skill": "Cloud (AWS)", "demand": 79 },
+      { "skill": "React", "demand": 74 },
+      { "skill": "Ayurveda Research", "demand": 62 }
+    ],
+    "departmentStats": [
+      { "department": "Computer Science", "placement": 86, "internships": 72 },
+      { "department": "Ayurveda Sciences", "placement": 74, "internships": 58 },
+      { "department": "Biotechnology", "placement": 79, "internships": 65 },
+      { "department": "Electronics", "placement": 81, "internships": 68 },
+      { "department": "Management", "placement": 70, "internships": 52 }
+    ]
   }
 }

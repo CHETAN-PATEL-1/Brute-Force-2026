@@ -3,9 +3,9 @@
 
 @layer base {
   :root {
-    --color-brand: 99 102 241;
+    --color-brand: 168 85 247;
     --color-surface: 255 255 255;
-    --color-ink: 15 23 42;
+    --color-ink: 30 16 51;
   }
 
   html {
@@ -14,5 +14,22 @@
 
   body {
     @apply bg-surface-muted text-ink font-sans;
+  }
+
+  ::selection {
+    @apply bg-brand-200 text-brand-950;
+  }
+}
+
+@layer utilities {
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      rgb(168 85 247 / 0.08) 0%,
+      rgb(168 85 247 / 0.18) 50%,
+      rgb(168 85 247 / 0.08) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.8s infinite linear;
   }
 }

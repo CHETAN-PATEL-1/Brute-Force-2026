@@ -1,7 +1,40 @@
 {
   "success": true,
   "data": {
-    "applications": [],
-    "meta": { "total": 0, "page": 1, "limit": 10 }
+    "applications": [
+      {
+        "id": "app-001",
+        "title": "Data Analytics Intern",
+        "company": "AyurTech Labs",
+        "status": "interview",
+        "appliedAt": "2026-01-20",
+        "matchPercent": 87
+      },
+      {
+        "id": "app-002",
+        "title": "Python Developer Intern",
+        "company": "Indus Health Tech",
+        "status": "shortlisted",
+        "appliedAt": "2026-01-28",
+        "matchPercent": 79
+      },
+      {
+        "id": "app-003",
+        "title": "Research Assistant — Ayurveda NLP",
+        "company": "AIIA Collaboration Hub",
+        "status": "applied",
+        "appliedAt": "2026-02-05",
+        "matchPercent": 71
+      },
+      {
+        "id": "app-004",
+        "title": "Campus Ambassador",
+        "company": "SkillBridge India",
+        "status": "selected",
+        "appliedAt": "2025-12-10",
+        "matchPercent": 95
+      }
+    ],
+    "meta": { "total": 4, "page": 1, "limit": 10 }
   }
 }

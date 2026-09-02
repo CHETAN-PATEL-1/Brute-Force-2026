@@ -1,7 +1,16 @@
 {
   "success": true,
   "data": {
-    "skills": [],
-    "meta": { "assessedAt": null }
+    "skills": [
+      { "name": "Python", "level": 85, "category": "Technical" },
+      { "name": "Data Analysis", "level": 78, "category": "Technical" },
+      { "name": "React", "level": 65, "category": "Technical" },
+      { "name": "Communication", "level": 88, "category": "Soft" },
+      { "name": "Teamwork", "level": 82, "category": "Soft" },
+      { "name": "Machine Learning", "level": 42, "category": "Technical" },
+      { "name": "AWS Cloud", "level": 35, "category": "Technical" },
+      { "name": "System Design", "level": 40, "category": "Technical" }
+    ],
+    "meta": { "assessedAt": "2026-02-15T10:30:00Z" }
   }
 }

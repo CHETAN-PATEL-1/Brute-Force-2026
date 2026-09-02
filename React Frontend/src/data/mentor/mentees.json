@@ -1,7 +1,29 @@
 {
   "success": true,
   "data": {
-    "mentees": [],
-    "meta": { "total": 0, "page": 1, "limit": 10 }
+    "mentees": [
+      {
+        "id": "mentee-001",
+        "name": "Aarav Sharma",
+        "project": "Ayurveda Knowledge Graph",
+        "progress": 68,
+        "lastActive": "2026-02-28"
+      },
+      {
+        "id": "mentee-002",
+        "name": "Sneha Reddy",
+        "project": "Herbal Compound Classification ML",
+        "progress": 45,
+        "lastActive": "2026-02-27"
+      },
+      {
+        "id": "mentee-003",
+        "name": "Karan Mehta",
+        "project": "Student Portfolio Platform UI",
+        "progress": 82,
+        "lastActive": "2026-03-01"
+      }
+    ],
+    "meta": { "total": 3, "page": 1, "limit": 10 }
   }
 }

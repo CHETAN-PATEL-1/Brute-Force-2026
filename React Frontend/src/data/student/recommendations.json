@@ -1,7 +1,52 @@
 {
   "success": true,
   "data": {
-    "recommendations": [],
-    "meta": { "total": 0, "page": 1, "limit": 10 }
+    "recommendations": [
+      {
+        "id": "rec-001",
+        "type": "internship",
+        "title": "Data Analytics Intern",
+        "company": "AyurTech Labs",
+        "location": "Bengaluru, Karnataka",
+        "matchPercent": 87,
+        "skills": ["Python", "Data Analysis", "SQL"],
+        "stipend": "₹15,000/month",
+        "duration": "3 months"
+      },
+      {
+        "id": "rec-002",
+        "type": "course",
+        "title": "Machine Learning Foundations",
+        "company": "NPTEL / IIT Madras",
+        "location": "Online",
+        "matchPercent": 92,
+        "skills": ["Machine Learning", "Python"],
+        "stipend": "Free",
+        "duration": "8 weeks"
+      },
+      {
+        "id": "rec-003",
+        "type": "internship",
+        "title": "Full Stack Developer Intern",
+        "company": "BharatSoft Innovations",
+        "location": "Hyderabad, Telangana",
+        "matchPercent": 74,
+        "skills": ["React", "Node.js", "MongoDB"],
+        "stipend": "₹12,000/month",
+        "duration": "6 months"
+      },
+      {
+        "id": "rec-004",
+        "type": "job",
+        "title": "Junior Data Analyst",
+        "company": "HealthSync Analytics",
+        "location": "Pune, Maharashtra",
+        "matchPercent": 68,
+        "skills": ["Python", "Excel", "Power BI"],
+        "stipend": "₹4.5 LPA",
+        "duration": "Full-time"
+      }
+    ],
+    "meta": { "total": 4, "page": 1, "limit": 10 }
   }
 }

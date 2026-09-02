@@ -1,6 +1,5 @@
-// Placeholder — full implementation in Step 2
+import { cn } from '@/lib/cn'
+
 export default function Skeleton({ className = '' }) {
-  return (
-    <div className={`animate-pulse rounded-md bg-ink-subtle/20 ${className}`} />
-  )
+  return <div className={cn('shimmer rounded-lg bg-brand-100/40', className)} aria-hidden="true" />
 }

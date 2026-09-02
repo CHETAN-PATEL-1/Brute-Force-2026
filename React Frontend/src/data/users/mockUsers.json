@@ -5,26 +5,35 @@
       {
         "id": "usr-student-001",
         "role": "student",
-        "name": "Demo Student",
-        "email": "student@demo.ac.in"
+        "name": "Aarav Sharma",
+        "email": "aarav.sharma@student.nitdelhi.ac.in",
+        "department": "Computer Science",
+        "year": "3rd Year",
+        "avatar": "AS"
       },
       {
         "id": "usr-industry-001",
         "role": "industry",
-        "name": "Demo Industry",
-        "email": "hr@demo-industry.in"
+        "name": "TechVeda Solutions",
+        "email": "careers@techveda.in",
+        "department": "HR & Talent",
+        "avatar": "TV"
       },
       {
         "id": "usr-mentor-001",
         "role": "mentor",
-        "name": "Demo Mentor",
-        "email": "mentor@demo.ac.in"
+        "name": "Dr. Priya Menon",
+        "email": "priya.menon@iiitb.ac.in",
+        "department": "Ayurveda Research",
+        "avatar": "PM"
       },
       {
         "id": "usr-admin-001",
         "role": "admin",
-        "name": "Demo Admin",
-        "email": "admin@demo.ac.in"
+        "name": "Institute Admin",
+        "email": "admin@nitdelhi.ac.in",
+        "department": "Training & Placement Cell",
+        "avatar": "IA"
       }
     ]
   }

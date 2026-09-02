@@ -1,7 +1,32 @@
 {
   "success": true,
   "data": {
-    "applicants": [],
-    "meta": { "total": 0, "page": 1, "limit": 10 }
+    "applicants": [
+      {
+        "id": "cand-001",
+        "name": "Aarav Sharma",
+        "role": "Data Analytics Intern",
+        "matchPercent": 87,
+        "skills": ["Python", "SQL", "Data Analysis"],
+        "status": "shortlisted"
+      },
+      {
+        "id": "cand-002",
+        "name": "Isha Patel",
+        "role": "Software Engineer Intern",
+        "matchPercent": 91,
+        "skills": ["React", "Node.js", "MongoDB"],
+        "status": "interview"
+      },
+      {
+        "id": "cand-003",
+        "name": "Rohan Gupta",
+        "role": "Ayurveda Data Research Intern",
+        "matchPercent": 76,
+        "skills": ["Python", "NLP", "Research Writing"],
+        "status": "applied"
+      }
+    ],
+    "meta": { "total": 3, "page": 1, "limit": 10 }
   }
 }

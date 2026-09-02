@@ -1,7 +1,32 @@
 {
   "success": true,
   "data": {
-    "opportunities": [],
-    "meta": { "total": 0, "page": 1, "limit": 10 }
+    "opportunities": [
+      {
+        "id": "opp-001",
+        "title": "Faculty Development Program — AI in Healthcare",
+        "org": "Ministry of AYUSH / AIIA",
+        "type": "FDP",
+        "location": "New Delhi",
+        "deadline": "2026-03-15"
+      },
+      {
+        "id": "opp-002",
+        "title": "Industry Internship — Herbal Formulation Analytics",
+        "org": "AyurPharma Research Pvt. Ltd.",
+        "type": "Faculty Internship",
+        "location": "Ahmedabad, Gujarat",
+        "deadline": "2026-04-01"
+      },
+      {
+        "id": "opp-003",
+        "title": "Consultancy — Digital Health Platform Design",
+        "org": "National Health Stack Initiative",
+        "type": "Consultancy",
+        "location": "Remote",
+        "deadline": "2026-03-30"
+      }
+    ],
+    "meta": { "total": 3, "page": 1, "limit": 10 }
   }
 }
