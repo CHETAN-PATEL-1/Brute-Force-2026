@@ -589,5 +589,5 @@ If you find this project interesting, consider giving the repository a star.
 <p align="center">
 <b>Connecting Skills With Opportunities</b><br/>
 Empowering Students · Enabling Industries · Strengthening Academia<br/><br/>
-<b>SIH26044 | Academia–Industry Collaboration Portal</b>
+<b>SIH26044 | Skill-GenZ</b>
 </p>
