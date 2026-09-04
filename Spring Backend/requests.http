@@ -18,3 +18,46 @@ Content-Type: application/json
     { "skill": "AWS Cloud", "level": 35 }
   ]
 }
+
+### Matching (Feature 2) — embeddings compute asynchronously after POST
+
+POST http://localhost:8080/api/matching/students/skills
+Authorization: Basic student:student
+Content-Type: application/json
+
+{
+  "studentId": "stu-001",
+  "skills": ["Python", "Data Analysis", "SQL", "React"],
+  "interests": ["web development", "backend systems"]
+}
+
+POST http://localhost:8080/api/matching/postings
+Authorization: Basic student:student
+Content-Type: application/json
+
+{
+  "postingId": "post-001",
+  "title": "Data Analytics Intern",
+  "type": "internship",
+  "status": "open",
+  "skills": ["Python", "Data Analysis", "SQL"],
+  "interests": ["healthcare analytics"]
+}
+
+POST http://localhost:8080/api/matching/postings
+Authorization: Basic student:student
+Content-Type: application/json
+
+{
+  "postingId": "post-003",
+  "title": "Full Stack Developer Intern",
+  "type": "internship",
+  "status": "open",
+  "skills": ["React", "Node.js", "MongoDB"],
+  "interests": ["web development"]
+}
+
+### Wait a few seconds after the POSTs so nomic-embed-text can finish, then:
+
+GET http://localhost:8080/api/matching?studentId=stu-001
+Authorization: Basic student:student

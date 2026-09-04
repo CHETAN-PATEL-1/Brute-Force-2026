@@ -3,13 +3,13 @@
   "data": {
     "profile": {
       "id": "usr-student-001",
-      "name": "Aarav Sharma",
-      "email": "aarav.sharma@student.nitdelhi.ac.in",
+      "name": "Chetan Patel",
+      "email": "chetan.patel@student.nitdelhi.ac.in",
       "department": "Computer Science",
       "year": "3rd Year",
       "skillScore": 72,
       "readiness": "Industry Ready (Intermediate)",
-      "topSkills": ["Python", "Data Analysis", "Communication", "React Basics"],
+      "topSkills": ["java", "Web Designer", "Communication", "React Basics"],
       "skillGaps": ["Machine Learning", "Cloud (AWS)", "System Design"]
     }
   }

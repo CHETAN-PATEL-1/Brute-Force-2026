@@ -6,3 +6,7 @@ ollama:
   connect-timeout: 5s
   generate-timeout: 60s
   embed-timeout: 15s
+
+matching:
+  semantic-weight: 0.6
+  keyword-weight: 0.4

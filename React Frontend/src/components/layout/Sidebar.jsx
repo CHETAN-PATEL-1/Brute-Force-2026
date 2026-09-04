@@ -41,7 +41,7 @@ export default function Sidebar({ role }) {
           <GraduationCap className="h-5 w-5" />
         </div>
         <div>
-          <p className="text-sm font-bold text-ink">AIC Portal</p>
+          <p className="text-sm font-bold text-ink">Skill Genz</p>
           <p className="text-[10px] font-medium uppercase tracking-wider text-brand-500">
             Skill · Match · Grow
           </p>

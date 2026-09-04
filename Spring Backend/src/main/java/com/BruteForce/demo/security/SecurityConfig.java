@@ -22,6 +22,8 @@ public class SecurityConfig {
 				.httpBasic(Customizer.withDefaults())
 				.authorizeHttpRequests(auth -> auth.requestMatchers("/api/ai/**")
 						.hasRole("STUDENT")
+						.requestMatchers("/api/matching/**")
+						.hasAnyRole("STUDENT", "INDUSTRY")
 						.anyRequest()
 						.authenticated());
 		return http.build();

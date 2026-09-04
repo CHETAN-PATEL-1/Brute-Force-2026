@@ -1,6 +1,5 @@
 package com.BruteForce.demo.ai.domain;
 
-import com.BruteForce.demo.ai.dto.ImprovementArea;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,19 +7,18 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "student_profiles")
-public class StudentProfile {
+@Document(collection = "job_postings")
+public class JobPosting {
 
 	@Id
 	private String id;
 
 	@Indexed(unique = true)
-	private String studentId;
+	private String postingId;
 
-	private String skillGapCacheKey;
-	private List<ImprovementArea> skillGapSuggestions;
-	private Instant skillGapGeneratedAt;
-
+	private String title;
+	private String type;
+	private String status;
 	private List<String> skills = new ArrayList<>();
 	private List<String> interests = new ArrayList<>();
 	private List<Double> skillEmbedding = new ArrayList<>();
@@ -35,36 +33,36 @@ public class StudentProfile {
 		this.id = id;
 	}
 
-	public String getStudentId() {
-		return studentId;
+	public String getPostingId() {
+		return postingId;
 	}
 
-	public void setStudentId(String studentId) {
-		this.studentId = studentId;
+	public void setPostingId(String postingId) {
+		this.postingId = postingId;
 	}
 
-	public String getSkillGapCacheKey() {
-		return skillGapCacheKey;
+	public String getTitle() {
+		return title;
 	}
 
-	public void setSkillGapCacheKey(String skillGapCacheKey) {
-		this.skillGapCacheKey = skillGapCacheKey;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
-	public List<ImprovementArea> getSkillGapSuggestions() {
-		return skillGapSuggestions;
+	public String getType() {
+		return type;
 	}
 
-	public void setSkillGapSuggestions(List<ImprovementArea> skillGapSuggestions) {
-		this.skillGapSuggestions = skillGapSuggestions;
+	public void setType(String type) {
+		this.type = type;
 	}
 
-	public Instant getSkillGapGeneratedAt() {
-		return skillGapGeneratedAt;
+	public String getStatus() {
+		return status;
 	}
 
-	public void setSkillGapGeneratedAt(Instant skillGapGeneratedAt) {
-		this.skillGapGeneratedAt = skillGapGeneratedAt;
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public List<String> getSkills() {
@@ -105,5 +103,13 @@ public class StudentProfile {
 
 	public void setEmbeddingUpdatedAt(Instant embeddingUpdatedAt) {
 		this.embeddingUpdatedAt = embeddingUpdatedAt;
+	}
+
+	public boolean isOpen() {
+		if (status == null || status.isBlank()) {
+			return true;
+		}
+		String normalized = status.trim().toLowerCase();
+		return "open".equals(normalized) || "active".equals(normalized);
 	}
 }

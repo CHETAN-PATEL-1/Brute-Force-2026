@@ -4,7 +4,7 @@
     "applicants": [
       {
         "id": "cand-001",
-        "name": "Aarav Sharma",
+        "name": "Chetan Patel",
         "role": "Data Analytics Intern",
         "matchPercent": 87,
         "skills": ["Python", "SQL", "Data Analysis"],

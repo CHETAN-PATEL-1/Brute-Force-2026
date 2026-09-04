@@ -5,11 +5,11 @@
       {
         "id": "usr-student-001",
         "role": "student",
-        "name": "Aarav Sharma",
-        "email": "aarav.sharma@student.nitdelhi.ac.in",
+        "name": "Chetan Patel",
+        "email": "chetan.patel@student.nitdelhi.ac.in",
         "department": "Computer Science",
         "year": "3rd Year",
-        "avatar": "AS"
+        "avatar": "CP"
       },
       {
         "id": "usr-industry-001",

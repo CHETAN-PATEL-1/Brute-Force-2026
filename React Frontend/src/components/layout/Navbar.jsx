@@ -90,7 +90,7 @@ export function PublicNavbar() {
           <Sparkles className="h-5 w-5" />
         </div>
         <div>
-          <p className="text-sm font-bold text-white">AIC Portal</p>
+          <p className="text-sm font-bold text-white">Skill Genz</p>
           <p className="text-xs text-purple-200">SIH26044 · Ministry of AYUSH</p>
         </div>
       </Link>

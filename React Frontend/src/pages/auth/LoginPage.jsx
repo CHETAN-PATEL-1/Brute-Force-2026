@@ -37,7 +37,7 @@ export default function LoginPage() {
             <Sparkles className="h-6 w-6" />
           </div>
           <div>
-            <p className="font-bold text-white">AIC Portal</p>
+            <p className="font-bold text-white">Skill Genz</p>
             <p className="text-xs text-purple-200">Ministry of AYUSH · AIIA</p>
           </div>
         </div>
@@ -51,7 +51,7 @@ export default function LoginPage() {
             Skill mapping, smart recommendations, and placement analytics — built for SIH26044.
           </p>
         </div>
-        <p className="relative text-xs text-purple-300">© 2026 Academia–Industry Collaboration Portal</p>
+        <p className="relative text-xs text-purple-300">© 2026 Skill Genz</p>
       </div>
 
       {/* Right panel — form */}
@@ -65,7 +65,7 @@ export default function LoginPage() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-600 text-white">
               <GraduationCap className="h-5 w-5" />
             </div>
-            <p className="font-bold text-ink">AIC Portal</p>
+            <p className="font-bold text-ink">Skill Genz</p>
           </div>
 
           <h1 className="text-2xl font-bold text-ink">Welcome back</h1>

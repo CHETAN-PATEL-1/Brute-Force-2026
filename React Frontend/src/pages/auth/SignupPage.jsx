@@ -21,7 +21,7 @@ export default function SignupPage() {
           </div>
           <div>
             <h1 className="text-xl font-bold text-ink">Create account</h1>
-            <p className="text-xs text-ink-muted">Join the Academia–Industry ecosystem</p>
+            <p className="text-xs text-ink-muted">Join the Skill Genz ecosystem</p>
           </div>
         </div>
 

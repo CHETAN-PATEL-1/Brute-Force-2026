@@ -71,7 +71,7 @@ export default function LandingPage() {
               Smart India Hackathon · SIH26044 · Ministry of AYUSH
             </span>
             <h1 className="mt-6 text-4xl font-bold leading-tight tracking-tight md:text-6xl">
-              Academia–Industry
+              Skill Genz
               <br />
               <span className="text-purple-200">Collaboration Portal</span>
             </h1>
