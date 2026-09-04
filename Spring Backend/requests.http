@@ -1,0 +1,20 @@
+### Skill-gap (Feature 1) — local Ollama + BASIC auth student/student
+### First call generates; identical body should return "cached": true
+
+POST http://localhost:8080/api/ai/skill-gap
+Authorization: Basic student:student
+Content-Type: application/json
+
+{
+  "studentId": "stu-001",
+  "targetRole": "Junior Data Engineer",
+  "postingId": "post-42",
+  "targetRequirements": ["SQL", "Python", "Apache Spark", "AWS"],
+  "currentSkills": [
+    { "skill": "Python", "level": 85 },
+    { "skill": "Data Analysis", "level": 78 },
+    { "skill": "React", "level": 65 },
+    { "skill": "Machine Learning", "level": 42 },
+    { "skill": "AWS Cloud", "level": 35 }
+  ]
+}
