@@ -73,7 +73,7 @@ export default function LandingPage() {
             <h1 className="mt-6 text-4xl font-bold leading-tight tracking-tight md:text-6xl">
               Skill Genz
               <br />
-              <span className="text-purple-200">Collaboration Portal</span>
+              <span className="text-purple-200">Skill Mapping & AI Placement</span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-base text-purple-100/90 md:text-lg">
               Connect students, industries, academicians, and institutions on one platform —

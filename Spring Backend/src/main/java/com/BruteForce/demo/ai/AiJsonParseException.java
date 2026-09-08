@@ -9,6 +9,10 @@ public class AiJsonParseException extends RuntimeException {
 		super(USER_MESSAGE);
 	}
 
+	public AiJsonParseException(String message) {
+		super(message);
+	}
+
 	public AiJsonParseException(String message, Throwable cause) {
 		super(message, cause);
 	}

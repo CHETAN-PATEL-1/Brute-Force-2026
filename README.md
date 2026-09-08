@@ -1,19 +1,19 @@
-# Academia–Industry Collaboration Portal
+# Skill Genz — AI-Powered Skill Mapping, Internship & Placement Portal
 
 <p align="center">
   <img src="https://img.shields.io/badge/Smart%20India%20Hackathon-SIH26044-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/MERN-Stack-61DAFB?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Spring%20Boot-Java-6DB33F?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Under%20Development-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/React%2019-Vite-61DAFB?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Spring%20Boot-Java%2025-6DB33F?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/MongoDB-skill__genz-47A248?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Ollama-Local%20AI-blue?style=for-the-badge" />
 </p>
 
 <p align="center">
-  <b>Bridging the Gap Between Academia, Students & Industry</b>
+  <b>Bridging the Gap Between Academia, Students & Industry with Local AI</b>
 </p>
 
 <p align="center">
-  A unified platform for skill mapping, career development, internships, placements, learning programs, and academia–industry collaboration.
+  A unified platform for skill assessment, AI gap analysis, explainable job matching, resume parsing, and digital portfolios.
 </p>
 
 ---
@@ -22,10 +22,11 @@
 
 **Problem Statement ID:** `SIH26044`
 
-**Title:** Portal for Academia–Industry Collaboration for Skill Mapping, Internships and Placement
+**Title:** Portal for Academia–Industry Collaboration for Skill Mapping, Internships and Placement (Skill Genz)
 
 | Field | Detail |
 |---|---|
+| Project Name | **Skill Genz** |
 | Organization | Ministry of Ayush |
 | Department | All India Institute of Ayurveda |
 | Category | Software |
@@ -35,7 +36,7 @@
 
 ## Overview
 
-The **Academia–Industry Collaboration Portal** is a centralized platform connecting **Students, Academicians, Institutions, and Industries** on a single ecosystem.
+**Skill Genz** is an AI-powered portal connecting **Students, Academicians, Institutions, and Industries** in a unified ecosystem.
 
 There is a growing gap between the skills students acquire through academic education and the skills demanded by modern industries. Students often struggle to identify which skills their desired career paths require, while companies face difficulty discovering candidates with the right skill sets. Academicians and institutions, in turn, often have limited access to industry internships, training programs, mentorship, and research collaborations.
 
@@ -200,6 +201,10 @@ flowchart TD
 *Java backend*
 - Java, Spring Boot, Spring Web, Spring Security, RESTful APIs
 
+**Local AI Engine (Free & Open Source)**
+- Ollama (`llama3.2:3b` for generation / reasoning, `nomic-embed-text` for semantic embeddings)
+- AI features run entirely locally via Ollama — no external API keys or cost.
+
 **Database**
 - MongoDB, Mongoose
 
@@ -209,11 +214,13 @@ flowchart TD
 - Secure document handling
 
 **Development Tools**
-- Git, GitHub, VS Code, Postman, MongoDB Compass
+- Git, GitHub, VS Code, Postman, MongoDB Compass, Ollama CLI
 
 ---
 
 ## High-Level Architecture
+
+> **Note on AI Layer:** AI features run entirely locally via Ollama — no external API keys or cost.
 
 ```mermaid
 graph TD
@@ -241,23 +248,32 @@ graph TD
     Backend --> Java
     Backend --> DB
 
-    subgraph Java["Java Services — Spring Boot"]
-        J1[Skill Matching]
-        J2[Recommendation Engine]
-        J3[Analytics]
-        J4[Business Logic]
-        J5[Secure APIs]
+    subgraph Java["Java Services — Spring Boot Core"]
+        J1[Skill Gap AI Service]
+        J2[Embedding-Based Matching Engine]
+        J3[Resume Parsing AI Service]
+        J4[Portfolio Bio AI Service]
+        J5[Secure REST APIs]
     end
+
+    subgraph LocalAI["Local AI Layer — Ollama (No API Keys / Zero Cost)"]
+        AI1[llama3.2:3b — Text Generation / Reasoning]
+        AI2[nomic-embed-text — 768d Vector Embeddings]
+    end
+
+    Java <-->|Plain HTTP / Localhost:11434| LocalAI
 
     subgraph DB["Database — MongoDB"]
         D1[Users]
-        D2[Skills]
+        D2[Skills & Vectors]
         D3[Jobs]
         D4[Internships]
         D5[Applications]
         D6[Portfolios]
         D7[Certifications]
     end
+
+    Java --> DB
 ```
 
 ---
@@ -426,7 +442,7 @@ SPRING_BOOT_URL=http://localhost:8080
 
 ```mermaid
 graph TD
-    A[React Frontend] --> B[Node.js / Express]
+    A[Frontend — React] --> B[Node.js / Express]
     B --> C[Authentication]
     B --> D[User Management]
     B --> E[Jobs]

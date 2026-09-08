@@ -1,5 +1,8 @@
-### Skill-gap (Feature 1) — local Ollama + BASIC auth student/student
-### First call generates; identical body should return "cached": true
+### ==========================================================================
+### Feature 1: Skill-gap suggestions (Ollama llama3.2:3b)
+### Input: Student skill assessment scores + Target role requirements
+### First call generates via Ollama; identical request returns cached: true
+### ==========================================================================
 
 POST http://localhost:8080/api/ai/skill-gap
 Authorization: Basic student:student
@@ -11,16 +14,20 @@ Content-Type: application/json
   "postingId": "post-42",
   "targetRequirements": ["SQL", "Python", "Apache Spark", "AWS"],
   "currentSkills": [
-    { "skill": "Python", "level": 85 },
-    { "skill": "Data Analysis", "level": 78 },
-    { "skill": "React", "level": 65 },
-    { "skill": "Machine Learning", "level": 42 },
-    { "skill": "AWS Cloud", "level": 35 }
+    { "skill": "Python", "level": 85.0 },
+    { "skill": "Data Analysis", "level": 78.0 },
+    { "skill": "React", "level": 65.0 },
+    { "skill": "Machine Learning", "level": 42.0 },
+    { "skill": "AWS Cloud", "level": 35.0 }
   ]
 }
 
-### Matching (Feature 2) — embeddings compute asynchronously after POST
+### ==========================================================================
+### Feature 2: Embedding-based matching (Ollama nomic-embed-text)
+### Embeddings compute asynchronously in the background via @Async executor
+### ==========================================================================
 
+### 2a. Update Student Profile skills & interests (triggers async embedding)
 POST http://localhost:8080/api/matching/students/skills
 Authorization: Basic student:student
 Content-Type: application/json
@@ -31,6 +38,7 @@ Content-Type: application/json
   "interests": ["web development", "backend systems"]
 }
 
+### 2b. Upsert Job/Internship Posting 1 (triggers async embedding)
 POST http://localhost:8080/api/matching/postings
 Authorization: Basic student:student
 Content-Type: application/json
@@ -44,6 +52,7 @@ Content-Type: application/json
   "interests": ["healthcare analytics"]
 }
 
+### 2c. Upsert Job/Internship Posting 2 (triggers async embedding)
 POST http://localhost:8080/api/matching/postings
 Authorization: Basic student:student
 Content-Type: application/json
@@ -57,7 +66,47 @@ Content-Type: application/json
   "interests": ["web development"]
 }
 
-### Wait a few seconds after the POSTs so nomic-embed-text can finish, then:
-
+### 2d. Compute Match Score (0.6 * cosineSimilarity + 0.4 * keywordOverlap)
+### Wait 2-3 seconds after the POSTs so nomic-embed-text finishes in background
 GET http://localhost:8080/api/matching?studentId=stu-001
 Authorization: Basic student:student
+
+### ==========================================================================
+### Feature 3: Resume / Certificate Skill Extraction (Ollama llama3.2:3b)
+### Extracts structured skills list + proficiency guess for student confirmation
+### ==========================================================================
+
+POST http://localhost:8080/api/ai/extract-skills
+Authorization: Basic student:student
+Content-Type: application/json
+
+{
+  "resumeText": "Experienced Computer Science undergraduate with 2 years of hands-on experience building web applications using React, JavaScript, and Node.js. Proficient in designing RESTful APIs with Spring Boot and MongoDB. Basic familiarity with Docker containerization and AWS EC2 deployments. Strong problem solving and team collaboration skills demonstrated during SIH Hackathons."
+}
+
+### ==========================================================================
+### Feature 4: AI Portfolio Bio Generation (Ollama llama3.2:3b)
+### Generates a professional 3-4 sentence summary/bio for the student portfolio
+### ==========================================================================
+
+POST http://localhost:8080/api/ai/generate-bio
+Authorization: Basic student:student
+Content-Type: application/json
+
+{
+  "studentName": "Aarav Sharma",
+  "targetRole": "Full Stack Software Engineer",
+  "skills": ["Java", "Spring Boot", "React", "MongoDB", "Docker", "REST APIs"],
+  "projects": [
+    "Academia-Industry Collaboration Portal (Smart India Hackathon)",
+    "Real-time Chat and Notification Engine using WebSockets"
+  ],
+  "certifications": [
+    "AWS Certified Cloud Practitioner",
+    "Oracle Certified Associate Java SE"
+  ],
+  "achievements": [
+    "Top 5 finalist at National Level Hackathon 2025",
+    "Maintained 8.9 CGPA in Computer Science"
+  ]
+}

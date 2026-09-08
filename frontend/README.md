@@ -1,8 +1,8 @@
-# Academia–Industry Collaboration Portal — Frontend
+# Skill Genz — Frontend
 
 > **SIH26044** · Ministry of AYUSH / AIIA · Smart India Hackathon 2026
 
-Frontend-only React application for the Academia–Industry Collaboration Portal. Uses mock JSON data to simulate API responses until the backend (Node.js + Spring Boot + MongoDB) is integrated.
+Modern React application for **Skill Genz** — Skill mapping, AI gap analysis, explainable job matching, and digital portfolios integrated with Spring Boot + MongoDB + Ollama.
 
 ---
 
@@ -11,7 +11,7 @@ Frontend-only React application for the Academia–Industry Collaboration Portal
 | Tool | Purpose |
 |------|---------|
 | **React 19** + **Vite** | UI framework & build tool |
-| **React Router v6** | Client-side routing |
+| **React Router v7** | Client-side routing |
 | **Tailwind CSS v4** | Styling (purple theme) |
 | **Framer Motion** | Animations & transitions |
 | **Recharts** | Dashboard analytics charts |
@@ -23,7 +23,7 @@ Frontend-only React application for the Academia–Industry Collaboration Portal
 ## Quick Start
 
 ```bash
-cd "React Frontend"
+cd frontend
 npm install
 npm run dev
 ```
